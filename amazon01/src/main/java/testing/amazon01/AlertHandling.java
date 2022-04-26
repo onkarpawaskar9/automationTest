@@ -1,6 +1,7 @@
 package testing.amazon01;
 
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,8 +33,10 @@ public class AlertHandling {
 			
 			driver.findElement(By.id("confirmButton")).click();
 			
-		    String alertText = AlertHandling.getText();
-			System.out.println("Alert text is " + alertText);
+		    
+			String alertText = AlertHandling.getText();
+		    System.out.println("Alert text is " + alertText);
+		    
 			AlertHandling.accept();
 			
 		
