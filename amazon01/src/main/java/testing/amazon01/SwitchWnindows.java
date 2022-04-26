@@ -10,8 +10,15 @@ public class SwitchWnindows {
 		System.setProperty("webdriver.chrome.driver","\\Users\\Vijay Thorat\\Downloads\\chromedriver.exe");		
 		
     	WebDriver driver = new ChromeDriver();
+    	
+    	driver.manage().window().maximize();
 		
-		driver.get("https://demoqa.com/alerts");
+		driver.get("https://demoqa.com/browser-windows");
+		
+		//driver.findElement(By.id("tabButton")).click();
+	
+		driver.findElement(By.id("windowButton")).click();
+		
 		
 	}
 
