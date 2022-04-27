@@ -25,6 +25,8 @@ public class MouseActions {
     	WebElement element = driver.findElement(By.linkText("Get started free"));
 
     	action.moveToElement(element).click().perform();
+    	
+    	
 	}
 
 }
